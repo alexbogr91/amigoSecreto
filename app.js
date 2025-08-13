@@ -2,19 +2,19 @@ let names = []
 
 
 function limparCampo(){
-    let nome = document.querySelector('input')
-    nome.value = ""
+    let name = document.querySelector('input')
+    name.value = ""
 }
 
 
 function adicionarAmigo(){
     
-    let nome = document.querySelector('input').value
-    if(nome.trim() !== ""){
-        names.push(nome)
+    let name = document.querySelector('input').value
+    if(name.trim() !== ""){
+        names.push(name)
         
         let listaAmigos = document.getElementById('listaAmigos')
-        let lista = criarLista('li', nome)
+        let lista = criarLista('li', name)
         listaAmigos.appendChild(lista)
 
 
@@ -25,20 +25,20 @@ function adicionarAmigo(){
 function sortearAmigo(){
     if(names.length > 0){
         let indiceAleatorio = Math.floor(Math.random() * names.length)
-        let nomeAleatorio = names[indiceAleatorio]
+        let nameAleatorio = names[indiceAleatorio]
         
         
         let resultado = document.getElementById('resultado')
-        let listaSorteadaDeNomes = criarLista('li', nomeAleatorio)
-        resultado.appendChild(listaSorteadaDeNomes)
+        let listaSorteadaDenames = criarLista('li', nameAleatorio)
+        resultado.appendChild(listaSorteadaDenames)
 
         names.splice(indiceAleatorio, 1)
     }
 
 }
 
-function criarLista(tag, nome){
+function criarLista(tag, name){
     let lista = document.createElement(tag)
-    lista.textContent = nome
+    lista.textContent = name
     return lista
 }

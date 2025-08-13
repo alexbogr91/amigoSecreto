@@ -8,7 +8,7 @@
     --color-white: #FFFFFF;
 }
 
-/* Estilos gerais */
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -39,7 +39,7 @@ body {
     padding: 40px 0 0;
 }
 
-/* Seção de entrada */
+/* Seccion de entrada */
 .input-section {
     flex: 60%;
     background-color: var(--color-secondary);
@@ -70,7 +70,7 @@ body {
     text-align: center;
 }
 
-/* Contêineres de entrada e botão */
+/* Contenedores de entrada y botones */
 .input-wrapper {
     display: flex;
     justify-content: center;
@@ -104,7 +104,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilos de botão */
+/* Estilos del boton */
 button {
     padding: 15px 30px;
     font-family: "Inter", sans-serif;
@@ -142,7 +142,7 @@ ul {
     text-align: center;
 }
 
-/* Botão de sortear título */
+/* Boton de sortear título */
 .button-draw {
     display: flex;
     align-items: center;
